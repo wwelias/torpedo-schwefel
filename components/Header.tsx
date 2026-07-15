@@ -35,10 +35,6 @@ export default function Header() {
             <Link href="/#kader" className="hover:text-gold transition-colors duration-200">
               Kader
             </Link>
-            <Link href="/#training" className="hover:text-gold transition-colors duration-200">
-              Training
-            </Link>
-
           </nav>
 
           {/* Mobile Menu Button */}
@@ -89,13 +85,6 @@ export default function Header() {
               className="block px-3 py-2 rounded-md text-base hover:bg-primary-green hover:text-gold transition-colors"
             >
               Kader
-            </Link>
-            <Link
-              href="/#training"
-              onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base hover:bg-primary-green hover:text-gold transition-colors"
-            >
-              Training
             </Link>
 
           </div>

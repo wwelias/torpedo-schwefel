@@ -46,7 +46,7 @@ export default async function Home() {
               <div className="flex-shrink-0 relative">
                 {/* Soft red background glow to replace CSS drop-shadow filter on the SVG image itself */}
                 <div className="absolute inset-0 bg-gold/15 rounded-full blur-3xl transform scale-75" />
-                <ClubLogo className="relative z-10 w-56 h-56 md:w-80 md:h-80 object-contain" />
+                <ClubLogo className="relative z-10 w-64 h-64 md:w-80 md:h-80" />
               </div>
             </div>
           </div>

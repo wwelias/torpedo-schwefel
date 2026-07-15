@@ -17,15 +17,6 @@
   },
   "posts": [
     {
-      "id": "post-1784147475737",
-      "title": "Test News",
-      "category": "Turnier",
-      "content": "Test",
-      "date": "2026-07-15",
-      "location": "bla",
-      "time": ""
-    },
-    {
       "id": "post-1",
       "title": "Sommer-Turnier 2026 am Funkenplatz",
       "date": "2026-07-15",

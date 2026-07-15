@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import ClubLogo from '@/components/ClubLogo';
+import Button from '@/components/ui/Button';
 import { ClubData, ClubInfo, Post, Player } from '@/lib/db';
 import { 
   loginAdmin, 
@@ -304,17 +305,17 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
               </div>
             )}
 
-            <button
+            <Button
               type="submit"
-              className="w-full bg-gold hover:bg-gold-dark text-primary-green-dark font-black py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
+              className="w-full py-3 flex items-center justify-center gap-2"
               disabled={isLoggingIn}
             >
               {isLoggingIn ? (
-                <span className="w-5 h-5 border-2 border-primary-green-dark border-t-transparent rounded-full animate-spin" />
+                <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
               ) : (
                 'Anmelden'
               )}
-            </button>
+            </Button>
           </form>
 
           <div className="text-center pt-2">
@@ -506,13 +507,13 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
             </div>
 
             <div className="border-t border-card-border pt-6 flex justify-end">
-              <button
+              <Button
                 type="submit"
                 disabled={isSaving}
-                className="bg-gold hover:bg-gold-dark text-primary-green-dark font-black px-6 py-3 rounded-lg transition-colors flex items-center gap-2"
+                className="px-6 py-3 flex items-center gap-2"
               >
                 {isSaving ? 'Speichert...' : 'Infos speichern'}
-              </button>
+              </Button>
             </div>
           </form>
         )}
@@ -525,12 +526,12 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
               <div className="bg-card-bg rounded-xl border border-card-border p-6 shadow-md">
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-2xl font-extrabold text-primary-green-light">Beiträge & Turniere</h2>
-                  <button
+                  <Button
                     onClick={startCreatePost}
-                    className="bg-gold hover:bg-gold-dark text-primary-green-dark font-black px-4 py-2.5 rounded-lg text-sm transition-colors"
+                    size="sm"
                   >
                     + Neuen Beitrag erstellen
-                  </button>
+                  </Button>
                 </div>
 
                 <div className="overflow-x-auto">
@@ -681,20 +682,19 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
                 </div>
 
                 <div className="border-t border-card-border pt-6 flex justify-end gap-3">
-                  <button
+                  <Button
                     type="button"
+                    variant="secondary"
                     onClick={closePostEditor}
-                    className="bg-white hover:bg-foreground/5 text-foreground border border-card-border font-semibold px-4 py-2.5 rounded-lg transition-colors"
                   >
                     Abbrechen
-                  </button>
-                  <button
+                  </Button>
+                  <Button
                     type="submit"
                     disabled={isSaving}
-                    className="bg-primary-green hover:bg-primary-green-light text-white font-bold px-5 py-2.5 rounded-lg transition-colors"
                   >
                     {isSaving ? 'Speichert...' : 'Beitrag speichern'}
-                  </button>
+                  </Button>
                 </div>
               </form>
             )}
@@ -709,12 +709,12 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
               <div className="bg-card-bg rounded-xl border border-card-border p-6 shadow-md">
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-2xl font-extrabold text-primary-green-light">Spielerkader pflegen</h2>
-                  <button
+                  <Button
                     onClick={startCreatePlayer}
-                    className="bg-gold hover:bg-gold-dark text-primary-green-dark font-black px-4 py-2.5 rounded-lg text-sm transition-colors"
+                    size="sm"
                   >
                     + Spieler hinzufügen
-                  </button>
+                  </Button>
                 </div>
 
                 <div className="overflow-x-auto">
@@ -822,20 +822,19 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
                 </div>
 
                 <div className="border-t border-card-border pt-6 flex justify-end gap-3">
-                  <button
+                  <Button
                     type="button"
+                    variant="secondary"
                     onClick={closePlayerEditor}
-                    className="bg-white hover:bg-foreground/5 text-foreground border border-card-border font-semibold px-4 py-2.5 rounded-lg transition-colors"
                   >
                     Abbrechen
-                  </button>
-                  <button
+                  </Button>
+                  <Button
                     type="submit"
                     disabled={isSaving}
-                    className="bg-primary-green hover:bg-primary-green-light text-white font-bold px-5 py-2.5 rounded-lg transition-colors"
                   >
                     {isSaving ? 'Speichert...' : 'Spieler speichern'}
-                  </button>
+                  </Button>
                 </div>
               </form>
             )}
