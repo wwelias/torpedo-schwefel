@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafafa;
+  --foreground: #111111;
+  --primary-green: #000000;
+  --primary-green-light: #4b5563;
+  --primary-green-dark: #0a0a0a;
+  --gold: #dc2626; /* Red accent */
+  --gold-light: #fee2e2; /* Light red accent */
+  --gold-dark: #991b1b; /* Dark red accent */
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary-green: var(--primary-green);
+  --color-primary-green-light: var(--primary-green-light);
+  --color-primary-green-dark: var(--primary-green-dark);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0d0d0d;
+    --foreground: #f3f4f6;
+    --primary-green: #171717;
+    --primary-green-light: #9ca3af;
+    --primary-green-dark: #050505;
+    --gold: #ef4444; /* Vibrant red accent */
+    --gold-light: #fca5a5; /* Lighter red accent */
+    --gold-dark: #b91c1c; /* Darker red accent */
+    --card-bg: #1a1a1a;
+    --card-border: #2d2d2d;
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }
+
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 4s ease-in-out infinite;
+}
+
+

@@ -1,0 +1,88 @@
+{
+  "clubInfo": {
+    "name": "Torpedo Schwefel",
+    "location": "Funkenplatz Schwefel",
+    "founded": "2018",
+    "tagline": "Zukünftige Champions-League-Sieger",
+    "description": "Torpedo Schwefel wurde 2018 von einer Gruppe fußballbegeisterter Freunde am legendären Funkenplatz Schwefel ins Leben gerufen. Was als wöchentlicher Kick begann, hat sich zu einem ambitionierten Hobby-Verein entwickelt. Mit unbändigem Teamgeist, taktischer Finesse (meistens zumindest) und einer gehörigen Portion Humor spielen wir jede Saison um den Sieg. Unser erklärtes Fernziel? Die Champions League! Bis dahin konzentrieren wir uns auf die lokalen Turniere und das anschließende Kaltgetränk.",
+    "colors": {
+      "primary": "#0f5132",
+      "secondary": "#ffffff",
+      "accent": "#d4af37"
+    },
+    "training": [
+      "Jeden Dienstag ab 18:30 Uhr am Funkenplatz",
+      "Jeden Donnerstag ab 19:00 Uhr (Taktik & Ausdauer)"
+    ]
+  },
+  "posts": [
+    {
+      "id": "post-1784147475737",
+      "title": "Test News",
+      "category": "Turnier",
+      "content": "Test",
+      "date": "2026-07-15",
+      "location": "bla",
+      "time": ""
+    },
+    {
+      "id": "post-1",
+      "title": "Sommer-Turnier 2026 am Funkenplatz",
+      "date": "2026-07-15",
+      "category": "Turnier",
+      "content": "Es ist wieder so weit! Unser jährliches Sommer-Turnier steht vor der Tür. Am Samstag, den 15. Juli 2026, empfangen wir 8 befreundete Teams aus der Region. Für das leibliche Wohl ist mit Bratwurst und Kaltgetränken bestens gesorgt. Kommt vorbei und unterstützt uns auf dem Weg zum Turniersieg!",
+      "location": "Sportplatz Funkenplatz, Schwefel",
+      "time": "10:00 Uhr - 18:00 Uhr"
+    },
+    {
+      "id": "post-2",
+      "title": "Torpedo Schwefel holt den Vize-Pokal!",
+      "date": "2026-06-28",
+      "category": "News",
+      "content": "Nach einem dramatischen Elfmeterschießen im Finale des Schwefeler Sparkassen-Cups mussten wir uns knapp geschlagen geben. Dennoch sind wir stolz auf einen hervorragenden 2. Platz. Danke an alle mitgereisten Fans für die fantastische Stimmung!",
+      "location": "Waldstadion Schwefel",
+      "time": "Abgeschlossen"
+    },
+    {
+      "id": "post-3",
+      "title": "Neuzugang für den Sturm verpflichtet",
+      "date": "2026-06-12",
+      "category": "News",
+      "content": "Wir freuen uns, einen echten Transfer-Coup bekanntgeben zu können. Mit Kevin 'Der Bomber' Schmidt verstärken wir unsere Offensive für die kommende Spielzeit. Kevin bringt Erfahrung aus der Bezirksliga mit und hat beim Probetraining bereits dreimal eingenetzt. Willkommen bei Torpedo!",
+      "location": "Funkenplatz",
+      "time": ""
+    }
+  ],
+  "squad": [
+    {
+      "name": "Manuel 'Die Krake' Neuerer",
+      "position": "Torwart",
+      "number": 1
+    },
+    {
+      "name": "Christian 'Eisenfuß' Schulz",
+      "position": "Abwehr",
+      "number": 4
+    },
+    {
+      "name": "Sebastian 'Der Dirigent' Schweinsteiger",
+      "position": "Mittelfeld",
+      "number": 7
+    },
+    {
+      "name": "Kevin 'Der Bomber' Schmidt",
+      "position": "Sturm",
+      "number": 9
+    },
+    {
+      "name": "Thomas 'Raumdeuter' Müller",
+      "position": "Sturm",
+      "number": 13
+    },
+    {
+      "name": "Florian Wohlgenannt",
+      "position": "Mittelfeld",
+      "number": 51
+    }
+  ]
+}
