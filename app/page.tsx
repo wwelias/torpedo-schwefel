@@ -34,7 +34,7 @@ export default async function Home() {
                   <span className="block text-gold mt-1">{clubInfo.name.split(' ')[1] || 'Schwefel'}</span>
                 </h1>
                 <p className="text-xl sm:text-2xl font-medium text-white/95 italic max-w-xl">
-                  🏆 "{clubInfo.tagline}"
+                  🏆 &quot;{clubInfo.tagline}&quot;
                 </p>
                 <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-white/80">
                   <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg border border-white/10">
@@ -210,7 +210,7 @@ export default async function Home() {
                       {player.number}
                     </div>
 
-                    <h3 className="font-bold text-lg text-foreground group-hover:text-gold transition-colors line-clamp-1">
+                    <h3 className="font-bold text-base sm:text-lg text-foreground group-hover:text-gold transition-colors leading-tight text-center break-words w-full px-1">
                       {player.name}
                     </h3>
                     

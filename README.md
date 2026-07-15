@@ -10,7 +10,7 @@ This is a fun, lighthearted project built to showcase the spirit of the club, ke
 
 *   **Club Legend & Info**: Read about the legend of the Funkenplatz and get the training times.
 *   **Aktuelles & Turniere**: Live news feed and tournament announcer with interactive metadata (location, time, dates).
-*   **Player Squad Manager**: An interactive display of the Torpedo squad, showing player numbers and positions.
+*   **Responsive Squad Cards**: An interactive display of the Torpedo squad, showing player numbers and positions.
 *   **Admin Dashboard**: A secure, hidden panel (`/admin`) for adding, editing, and deleting club details, news posts, and players.
 *   **Modern Aesthetics**: Built with a sleek black & white design with sharp red accents, full dark mode support, and smooth scrolling navigation.
 
@@ -18,17 +18,16 @@ This is a fun, lighthearted project built to showcase the spirit of the club, ke
 
 ## 🤖 AI Co-Authored
 
-This repository is built with the help of **AI pair programming**. The code, designs, assets, and refactoring were created and refined in collaboration with **Antigravity**, an agentic AI coding assistant designed by Google DeepMind. 
+This repository is built with the help of **AI pair programming**. The code, designs, assets, and refactoring were created and refined in collaboration with **Antigravity**, an agentic AI coding assistant designed by Google DeepMind.
 
 ---
 
 ## 🛠️ Tech Stack
 
-*   **Framework**: [Next.js](https://nextjs.org/) (App Router)
-*   **Library**: [React](https://react.dev/)
-*   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-*   **Icons & Assets**: Custom SVG brand vector logo scaled dynamically and optimized via `next/image`.
-
+*   **Framework**: [Next.js](https://nextjs.org/) (App Router, Server Actions)
+*   **Library**: [React 19](https://react.dev/)
+*   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) 
+*   **Database**: [Vercel Postgres](https://vercel.com/docs/storage/vercel-postgres) / [Neon](https://neon.tech/)
 ---
 
 ## 💻 Getting Started

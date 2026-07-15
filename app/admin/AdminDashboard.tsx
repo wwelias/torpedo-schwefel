@@ -59,25 +59,28 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
     number: 10
   });
 
-  // Load password from sessionStorage on mount
-  useEffect(() => {
-    const savedPw = sessionStorage.getItem('torpedo_admin_pw');
-    if (savedPw) {
-      setPassword(savedPw);
-      verifySavedPassword(savedPw);
-    }
-  }, []);
-
   const verifySavedPassword = async (pw: string) => {
     setIsLoggingIn(true);
     const res = await loginAdmin(pw);
     if (res.success) {
       setIsLoggedIn(true);
+      setPassword(pw); // Set password state asynchronously
     } else {
       sessionStorage.removeItem('torpedo_admin_pw');
     }
     setIsLoggingIn(false);
   };
+
+  // Load password from sessionStorage on mount
+  useEffect(() => {
+    const savedPw = sessionStorage.getItem('torpedo_admin_pw');
+    if (savedPw) {
+      const timer = setTimeout(() => {
+        verifySavedPassword(savedPw);
+      }, 0);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -145,7 +148,7 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
     }
 
     const postToSave: Post = {
-      id: postForm.id || `post-${Date.now()}`,
+      id: postForm.id || '', // Server action generates ID if empty
       title: postForm.title,
       category: postForm.category as 'News' | 'Turnier' | 'Training',
       content: postForm.content,
@@ -229,7 +232,7 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
       return;
     }
 
-    let updatedSquad = [...squad];
+    const updatedSquad = [...squad];
     if (editingPlayerIdx !== null) {
       updatedSquad[editingPlayerIdx] = playerForm;
     } else {
@@ -580,18 +583,20 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
                               )}
                             </td>
                             <td className="py-4 pl-4 text-right space-x-2 whitespace-nowrap">
-                              <button
+                              <Button
                                 onClick={() => startEditPost(post)}
-                                className="bg-primary-green/10 hover:bg-primary-green text-primary-green hover:text-white border border-primary-green/20 px-3 py-1.5 rounded transition-all text-xs font-semibold"
+                                variant="edit"
+                                size="sm"
                               >
-                                Edit
-                              </button>
-                              <button
+                                Bearbeiten
+                              </Button>
+                              <Button
                                 onClick={() => handleDeletePost(post.id)}
-                                className="bg-red-500/10 hover:bg-red-500 text-red-500 hover:text-white border border-red-500/20 px-3 py-1.5 rounded transition-all text-xs font-semibold"
+                                variant="danger"
+                                size="sm"
                               >
                                 Löschen
-                              </button>
+                              </Button>
                             </td>
                           </tr>
                         ))
@@ -751,18 +756,20 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
                               </span>
                             </td>
                             <td className="py-4 pl-4 text-right space-x-2 whitespace-nowrap">
-                              <button
+                              <Button
                                 onClick={() => startEditPlayer(player, index)}
-                                className="bg-primary-green/10 hover:bg-primary-green text-primary-green hover:text-white border border-primary-green/20 px-3 py-1.5 rounded transition-all text-xs font-semibold"
+                                variant="edit"
+                                size="sm"
                               >
-                                Edit
-                              </button>
-                              <button
+                                Bearbeiten
+                              </Button>
+                              <Button
                                 onClick={() => handleDeletePlayer(index)}
-                                className="bg-red-500/10 hover:bg-red-500 text-red-500 hover:text-white border border-red-500/20 px-3 py-1.5 rounded transition-all text-xs font-semibold"
+                                variant="danger"
+                                size="sm"
                               >
-                                Entfernen
-                              </button>
+                                Löschen
+                              </Button>
                             </td>
                           </tr>
                         ))

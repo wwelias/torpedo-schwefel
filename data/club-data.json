@@ -6,9 +6,9 @@
     "tagline": "Zukünftige Champions-League-Sieger",
     "description": "Torpedo Schwefel wurde 2018 von einer Gruppe fußballbegeisterter Freunde am legendären Funkenplatz Schwefel ins Leben gerufen. Was als wöchentlicher Kick begann, hat sich zu einem ambitionierten Hobby-Verein entwickelt. Mit unbändigem Teamgeist, taktischer Finesse (meistens zumindest) und einer gehörigen Portion Humor spielen wir jede Saison um den Sieg. Unser erklärtes Fernziel? Die Champions League! Bis dahin konzentrieren wir uns auf die lokalen Turniere und das anschließende Kaltgetränk.",
     "colors": {
-      "primary": "#0f5132",
+      "primary": "#000000",
       "secondary": "#ffffff",
-      "accent": "#d4af37"
+      "accent": "#dc2626"
     },
     "training": [
       "Jeden Dienstag ab 18:30 Uhr am Funkenplatz",
@@ -45,35 +45,34 @@
     }
   ],
   "squad": [
-    {
-      "name": "Manuel 'Die Krake' Neuerer",
-      "position": "Torwart",
-      "number": 1
-    },
-    {
-      "name": "Christian 'Eisenfuß' Schulz",
-      "position": "Abwehr",
-      "number": 4
-    },
-    {
-      "name": "Sebastian 'Der Dirigent' Schweinsteiger",
-      "position": "Mittelfeld",
-      "number": 7
-    },
-    {
-      "name": "Kevin 'Der Bomber' Schmidt",
-      "position": "Sturm",
-      "number": 9
-    },
-    {
-      "name": "Thomas 'Raumdeuter' Müller",
-      "position": "Sturm",
-      "number": 13
-    },
-    {
-      "name": "Florian Wohlgenannt",
-      "position": "Mittelfeld",
-      "number": 51
-    }
+    { "name": "Emi Schmid", "position": "Mittelfeld", "number": 10 },
+    { "name": "Fabian Pernstich", "position": "Abwehr", "number": 2 },
+    { "name": "Florian Wohlgenannt", "position": "Mittelfeld", "number": 51 },
+    { "name": "Thomas Fussenegger", "position": "Abwehr", "number": 15 },
+    { "name": "Julian Klammer", "position": "Mittelfeld", "number": 8 },
+    { "name": "Julian Willam", "position": "Abwehr", "number": 4 },
+    { "name": "Kilian Kappei", "position": "Mittelfeld", "number": 14 },
+    { "name": "Laurenz Gerstgraser", "position": "Sturm", "number": 11 },
+    { "name": "Luca Demuth", "position": "Sturm", "number": 20 },
+    { "name": "Luca Seidl", "position": "Abwehr", "number": 3 },
+    { "name": "Luki Beck", "position": "Torwart", "number": 1 },
+    { "name": "Manuel Reis", "position": "Abwehr", "number": 22 },
+    { "name": "Nizici Nico", "position": "Mittelfeld", "number": 6 },
+    { "name": "Raphi Schmid", "position": "Sturm", "number": 17 },
+    { "name": "Stevo", "position": "Sturm", "number": 9 },
+    { "name": "Timo Demuth", "position": "Mittelfeld", "number": 18 },
+    { "name": "Tobi Mathi", "position": "Mittelfeld", "number": 21 },
+    { "name": "Yannick Gross", "position": "Abwehr", "number": 5 },
+    { "name": "André", "position": "Torwart", "number": 12 },
+    { "name": "Lukas Haunschmied", "position": "Abwehr", "number": 24 },
+    { "name": "Marco List", "position": "Mittelfeld", "number": 16 },
+    { "name": "Matthias Brugger", "position": "Mittelfeld", "number": 23 },
+    { "name": "Niklas Scheuring", "position": "Sturm", "number": 27 },
+    { "name": "David Eder", "position": "Torwart", "number": 99 },
+    { "name": "David Fussenegger", "position": "Abwehr", "number": 19 },
+    { "name": "Jan Köck", "position": "Mittelfeld", "number": 7 },
+    { "name": "Julian Überbacher", "position": "Sturm", "number": 13 },
+    { "name": "Marvin Fenkart", "position": "Mittelfeld", "number": 77 },
+    { "name": "Niklas Mathis", "position": "Abwehr", "number": 88 }
   ]
 }

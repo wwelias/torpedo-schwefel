@@ -46,8 +46,8 @@ export default function Footer() {
             <h3 className="text-gold font-bold uppercase tracking-wider text-sm">Unser Revier</h3>
             <p className="text-sm text-white/70 text-center md:text-left">
               <strong>Heimspielstätte:</strong><br />
-              Sportplatz Funkenplatz<br />
-              Schwefel, Deutschland
+              Sportplatz Funkenplatz Schwefel<br />
+              Hohenems, Österreich
             </p>
             <p className="text-xs text-white/40 text-center md:text-left mt-2">
               Trainingszeiten: Dienstags & Donnerstags abends. Fans sind immer herzlich willkommen!
