@@ -14,9 +14,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Torpedo Schwefel 2018",
-  description: "Hobby-Fußballverein am Funkenplatz in Schwefel.",
+  description: "Hobby-Fußballverein Torpedo Schwefel am Funkenplatz im Schwefel Hohenems, Österreich.",
   icons: {
     icon: "/torpedo-schwefel_logo.svg",
+  },
+  verification: {
+    google: '3moP3CGZy8yC-kVeqaqr4swQlhnyQ7U2tJCvBejmRxM',
   },
 };
 
